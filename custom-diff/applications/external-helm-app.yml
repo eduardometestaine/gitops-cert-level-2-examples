@@ -22,3 +22,13 @@ spec:
     syncOptions:
       - CreateNamespace=true  
    
+  ## Ignore differences 
+  ignoreDifferences:
+  - group: apps
+    kind: Deployment
+    jsonPointers:
+    - /metadata/annotations
+  - group: v1
+    kind: Secret
+    jsonPointers:
+    - /data
