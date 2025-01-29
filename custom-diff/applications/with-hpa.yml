@@ -21,7 +21,8 @@ spec:
   syncPolicy:
     syncOptions:
       - CreateNamespace=true  
-   
+ 
+  ## Ignore replicas 
   ignoreDifferences:
   - group: apps
     kind: Deployment
